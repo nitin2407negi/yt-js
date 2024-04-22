@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM LEARNING</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM Learning on Chai Or Code <span style="display: none;">test text</span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, sequi.</p>
+        <input type="password" name="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- //id se kese target-document.getElementById('title') -->
+<!-- console code -->
+<!-- document.getElementById('title')
+<h1 id=​"title" class=​"heading">​DOM Learning on Chai Or Code​</h1>​
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class','test')
+undefined
+document.getElementById('title').setAttribute('class','test heading')
+undefined
+document.getElementById('title')
+<h1 id=​"title" class=​"test heading">​DOM Learning on Chai Or Code​</h1>​
+title
+<h1 id=​"title" class=​"test heading">​DOM Learning on Chai Or Code​</h1>​
+title.style.backgroundColor='green'
+'green'
+title.style.padding='15px'
+'15px'
+title.style.borderRa
+undefined
+title.style.borderRadius="14px"
+'14px' -->
+
+
+<!-- diff bw inner text and ineercontent -->
+<!-- title.innerText
+'DOM Learning on Chai Or Code'
+title.textContent
+'DOM Learning on Chai Or Code test text'
+title.innerHTML
+'DOM Learning on Chai Or Code <span style="display: none;">test text</span> --> 
+
+
+<!-- document.querySelector('ul')
+<ul>​<li>​…​</li>​::marker​"one"</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
+const myul=document.querySelector('ul')
+undefined
+const turngreen=myul.querySelector('li')
+undefined
+tur
+VM512:1 Uncaught ReferenceError: tur is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM512:1
+turngreen.style.backgroundColor='green'
+'green'
+turngreen.style.backgroundColor='green'
+'green'
+turngreen.innerText
+'one'
+turngreen.innerText="five"
+'five' -->
