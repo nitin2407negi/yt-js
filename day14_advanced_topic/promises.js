@@ -56,9 +56,9 @@ const username=promiseFour.then((user)=>{
 }).catch(function(error){
     console.log(error);
 }).finally(()=>console.log("finally the promise is resolved or rejected"))
+ 
 
-
-const promiseFive=new Promise(function(resolve,reject){
+const promiseFive = new Promise(function(resolve,reject){
     setTimeout(function(){
         let error=true;
         if(!error){
@@ -72,6 +72,14 @@ const promiseFive=new Promise(function(resolve,reject){
         }
     },1000)
 });
-async function consumePromiseFive({
+
+async function consumePromiseFive(){
+   try {
     const response=await promiseFive
-})
+    console.log(response);
+   } catch (error) {
+    console.log(error);
+   }
+}
+consumePromiseFive();
+
